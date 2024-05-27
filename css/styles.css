@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+
+#video-container {
+  width: 60%;
+}
+
+#video-container #video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+:root {
+  --background-color: #001220;
+  --primary-color: #ab004a;
+  --secondary-color: #442358;
+  --darken-color: rgba(0, 0, 0, 0.596);
+  --text: #fff;
+}
+
+.quiz-input {
+  color: var(--text);
+}
+
+.note-editor {
+  background-color: #fff;
+  width: 100%;
+}
+
+.button {
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button-verify{
+   
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+}
+.addFrined{
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.colored-text {
+  color: var(--primary-color);
+}
+
+.full-section {
+  height: 90vh;
+}
+
+.background-color {
+  background-color: var(--background-color);
+}
+
+.navlink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.navlink::after {
+  content: '';
+  height: 4px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  transition: width ease-in-out 0.3s;
+}
+
+.navlink:hover {
+  color: #fff;
+}
+
+.navlink:hover::after {
+  width: 100%;
+}
+
+.navbar-image-container {
+  height: 100%;
+}
+
+.img-logo-container {
+  width: 20%;
+  cursor: pointer;
+}
+
+.img-logo-container img {
+  cursor: pointer;
+}
+
+.background-image-container {
+  max-width: 100vw;
+  min-height: 100vh;
+  background: url(../img/showcase-image.svg) no-repeat center center/cover;
+}
+
+.main-description {
+  font-size: 1.2rem;
+}
+
+.about-image {
+  width: 70%;
+}
+
+.articles-article {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.colored-background {
+  background-color: #442358;
+  border-radius: 15px;
+}
+.heading-3 {
+  border-left: 7px solid var(--primary-color);
+  padding-left: 0.5rem;
+  color: #fff;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.heading-4 {
+  color: var(--primary-color);
+}
+
+.form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0.3rem 0;
+  outline: none;
+  color: #fff;
+}
+
+.form-input::placeholder {
+  color: #fff;
+}
+
+.user-image {
+  width: 90%;
+  margin-top: -5rem;
+}
+
+.round-image {
+  width: 166px;
+  height: 166px;
+  border-radius: 50%; /* Nastavení na 50% pro kulatý tvar */
+  object-fit: cover; /* Zajistí, aby obrázek vyplnil prostor a nebyl deformovaný */
+}
+
+#register-section form {
+  width: 40%;
+}
+
+#login-section form {
+  width: 40%;
+}
+
+.login-icon {
+  cursor: pointer;
+}
+
+.login-icon img {
+  cursor: pointer;
+}
+
+form .form-input {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.671);
+  border: none;
+  outline: none;
+  cursor: text;
+}
+
+/*settings*/
+#settings-sections{
+  max-height: 60vh;
+}
+@media (width < 768px) {
+  .background-image-container {
+    background: url(../img/showcase-responsive-image.svg) no-repeat center
+      center/cover;
+  }
+
+  .navbar-link {
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (width < 992px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .articles-flex-column {
+    flex-direction: column;
+  }
+
+  .articles-image {
+    display: none;
+  }
+
+  .about-image {
+    display: none;
+  }
+}
